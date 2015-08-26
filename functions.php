@@ -53,7 +53,12 @@ function _s_setup() {
 	 * to change '_s' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( '_s', get_template_directory() . '/languages' );
-
+	
+	/**
+	 * Add default title tag
+	 */
+	add_theme_support( 'title-tag' );
+	
 	/**
 	 * Add default posts and comments RSS feed links to head
 	 */
